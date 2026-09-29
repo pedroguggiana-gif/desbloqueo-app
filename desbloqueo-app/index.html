@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F4F1E8" />
+  <meta name="description" content="Desbloqueo: barajas creativas para publicistas inspiradas en estrategias oblicuas." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css?v=24cards" />
+  <title>Desbloqueo</title>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script>
+    // Clean up any legacy Service Worker caches immediately
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    }
+    if ("caches" in window) {
+      caches.keys().then((keys) => {
+        for (let k of keys) caches.delete(k);
+      });
+    }
+  </script>
+  <script src="app.js?v=24cards"></script>
+</body>
+</html>

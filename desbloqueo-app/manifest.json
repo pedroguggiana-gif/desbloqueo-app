@@ -1,0 +1,10 @@
+{
+  "name": "Desbloqueo",
+  "short_name": "Desbloqueo",
+  "description": "Barajas creativas para publicistas inspiradas en estrategias oblicuas.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F4F1E8",
+  "theme_color": "#F4F1E8",
+  "lang": "es"
+}
