@@ -303,12 +303,62 @@ a { color: inherit; }
   border-radius: 999px;
 }
 
-.prompt-text {
-  margin: 36px 0;
-  font-size: clamp(1.7rem, 5vw, 3.1rem);
-  line-height: 1.05;
+.card-body {
+  margin: 28px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  margin: 0 0 8px;
+  font-size: clamp(1.75rem, 4.4vw, 2.6rem);
+  line-height: 1.06;
   letter-spacing: -.05em;
   font-weight: 900;
+}
+
+.card-tag-wrap {
+  display: flex;
+  align-items: center;
+  margin: 6px 0 16px;
+}
+
+.card-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(23, 23, 23, 0.08);
+  border: 1px solid rgba(23, 23, 23, 0.12);
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .02em;
+  color: #171717;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.prompt-card.green .card-tag {
+  color: #0d2719;
+  background: rgba(13, 39, 25, 0.09);
+  border-color: rgba(13, 39, 25, 0.14);
+}
+
+.prompt-text {
+  margin: 0;
+  font-size: clamp(1.65rem, 4.8vw, 2.85rem);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+  font-weight: 900;
+}
+
+.prompt-card.has-title .prompt-text {
+  font-size: clamp(1.3rem, 3.2vw, 1.95rem);
+  line-height: 1.25;
+  letter-spacing: -.035em;
+  font-weight: 750;
+  opacity: .95;
 }
 
 .card-note {
@@ -424,6 +474,12 @@ a { color: inherit; }
   .hero h1 { font-size: 3.15rem; }
   .deck-header { flex-direction: column; }
   .prompt-card { min-height: 365px; border-radius: 25px; }
+  .card-body { margin: 18px 0 16px; }
+  .card-title { font-size: 1.65rem; }
+  .card-tag-wrap { margin: 4px 0 14px; }
+  .card-tag { font-size: .75rem; padding: 5px 12px; }
+  .prompt-card.has-title .prompt-text { font-size: 1.2rem; }
+  .prompt-card:not(.has-title) .prompt-text { font-size: 1.5rem; }
   .fake-card { border-radius: 25px; }
   .controls { flex-direction: column; }
   .primary-btn, .secondary-btn { width: 100%; }

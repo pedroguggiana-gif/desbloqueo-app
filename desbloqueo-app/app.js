@@ -8,30 +8,222 @@ const DECKS = {
       "Úsalo cuando estés en blanco, atrapado en clichés o dando vueltas sobre las mismas soluciones. Sus cartas te obligan a romper asociaciones obvias, cambiar perspectivas y conectar cosas que normalmente no relacionarías.",
     useWhen: "Necesitas encontrar un camino completamente nuevo.",
     cards: [
-      "Rompe el patrón: ¿Qué patrón estás siguiendo sin darte cuenta? Rómpelo.",
-      "Haz lo contrario: ¿Qué pasaría si haces exactamente lo contrario de lo que estás intentando hacer?",
-      "Usa lo que tienes cerca: Mira el objeto más cercano. ¿Cómo podría ayudarte a resolver esto?",
-      "Quita lo indispensable: Elimina lo que consideras indispensable. ¿Cómo lo resolverías sin eso?",
-      "Conviértelo en metáfora: ¿A qué otra situación se parece este problema?",
-      "Busca lo absurdo: ¿Cuál es la solución más absurda que se te ocurre? No intentes que sea buena.",
-      "Cambia al protagonista: ¿Qué pasaría si el brief estuviera dirigido a otro protagonista? Un animal, un objeto, un niño, un anciano, una máquina…",
-      "Míralo con otros ojos: ¿Cómo lo resolvería alguien de 80 años que nunca ha visto algo parecido?",
-      "Quédate sin plata: ¿Cómo lo harías si tuvieras $0?",
-      "Palabra aleatoria: Conecta el problema con [PALABRA AL AZAR]. Ej.: dinero, salud, personas, miedo, seguridad, amor, poder, tiempo, awareness…",
-      "Róbale una lógica a otro mundo: ¿Qué podríamos robarle a un videojuego, deporte, ritual, fiesta, casino, escuela…?",
-      "Invierte problema y solución: ¿Qué pasaría si el problema se convirtiera en la solución?",
-      "Pon lo ignorado al centro: ¿Qué cosa normalmente ignoramos de este problema? Pónganla al centro.",
-      "Sería más increíble si…: Termina la frase y deja que otro continúe: “Sería más increíble si…”",
-      "Cambia la emoción: ¿Qué pasa si en vez de provocar la emoción esperada provocamos miedo, orgullo, curiosidad, nostalgia, alivio, deseo…?",
-      "Cámbiale el objetivo: Olvida por un momento lo que el brief quiere conseguir. ¿Qué otra cosa interesante podríamos lograr?",
-      "Busca al tercero: Tenemos A → B. ¿Qué elemento inesperado podríamos meter en medio para cambiar la relación?",
-      "Rompe la reacción esperada: ¿Qué pasaría si nadie hiciera lo que esperamos que haga?",
-      "Cambia el verbo: Si estamos intentando mostrar, ¿qué pasa si tenemos que esconder, perseguir, intercambiar, destruir, regalar, coleccionar o transformar?",
-      "Llévalo a otro mundo: ¿Cómo funcionaría esta idea en una cárcel, colegio, estadio, aeropuerto, fiesta, hospital…?",
-      "Cuestiona lo obvio: ¿Qué estamos dando por obvio? Elijan una cosa. Ahora supongan que es falsa.",
-      "Haz chocar extremos: ¿Cómo sería si fuera lujoso y barato, privado y público, enorme y diminuto, serio y ridículo al mismo tiempo?",
-      "¿Qué pasa si haces exactamente lo contrario de lo que hace toda la categoría?",
-      "Busca el elemento más aburrido del producto. ¿Cómo podría convertirse en protagonista?"
+      {
+        id: "cortocircuito-1",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Rompe el patrón",
+        question: "¿Qué patrón estás siguiendo sin darte cuenta? Rómpelo.",
+        text: "Rompe el patrón: ¿Qué patrón estás siguiendo sin darte cuenta? Rómpelo.",
+        tag: "Ruptura de patrones"
+      },
+      {
+        id: "cortocircuito-2",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Haz lo contrario",
+        question: "¿Qué pasaría si haces exactamente lo contrario de lo que estás intentando hacer?",
+        text: "Haz lo contrario: ¿Qué pasaría si haces exactamente lo contrario de lo que estás intentando hacer?",
+        tag: "Inversión"
+      },
+      {
+        id: "cortocircuito-3",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Usa lo que tienes cerca",
+        question: "Mira el objeto más cercano. ¿Cómo podría ayudarte a resolver esto?",
+        text: "Usa lo que tienes cerca: Mira el objeto más cercano. ¿Cómo podría ayudarte a resolver esto?",
+        tag: "Uso de recursos"
+      },
+      {
+        id: "cortocircuito-4",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Quita lo indispensable",
+        question: "Elimina lo que consideras indispensable. ¿Cómo lo resolverías sin eso?",
+        text: "Quita lo indispensable: Elimina lo que consideras indispensable. ¿Cómo lo resolverías sin eso?",
+        tag: "Simplificación"
+      },
+      {
+        id: "cortocircuito-5",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Conviértelo en metáfora",
+        question: "¿A qué otra situación se parece este problema?",
+        text: "Conviértelo en metáfora: ¿A qué otra situación se parece este problema?",
+        tag: "Metáfora"
+      },
+      {
+        id: "cortocircuito-6",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Busca lo absurdo",
+        question: "¿Cuál es la solución más absurda que se te ocurre? No intentes que sea buena.",
+        text: "Busca lo absurdo: ¿Cuál es la solución más absurda que se te ocurre? No intentes que sea buena.",
+        tag: "Absurdo"
+      },
+      {
+        id: "cortocircuito-7",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Cambia al protagonista",
+        question: "¿Qué pasaría si el brief estuviera dirigido a otro protagonista? Un animal, un objeto, un niño, un anciano, una máquina…",
+        text: "Cambia al protagonista: ¿Qué pasaría si el brief estuviera dirigido a otro protagonista? Un animal, un objeto, un niño, un anciano, una máquina…",
+        tag: "Cambio de protagonista"
+      },
+      {
+        id: "cortocircuito-8",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Míralo con otros ojos",
+        question: "¿Cómo lo resolvería alguien de 80 años que nunca ha visto algo parecido?",
+        text: "Míralo con otros ojos: ¿Cómo lo resolvería alguien de 80 años que nunca ha visto algo parecido?",
+        tag: "Perspectiva"
+      },
+      {
+        id: "cortocircuito-9",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Quédate sin plata",
+        question: "¿Cómo lo harías si tuvieras $0?",
+        text: "Quédate sin plata: ¿Cómo lo harías si tuvieras $0?",
+        tag: "Restricciones"
+      },
+      {
+        id: "cortocircuito-10",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Palabra aleatoria",
+        question: "Conecta el problema con [PALABRA AL AZAR]. Ej.: dinero, salud, personas, miedo, seguridad, amor, poder, tiempo, awareness…",
+        text: "Palabra aleatoria: Conecta el problema con [PALABRA AL AZAR]. Ej.: dinero, salud, personas, miedo, seguridad, amor, poder, tiempo, awareness…",
+        tag: "Asociación aleatoria"
+      },
+      {
+        id: "cortocircuito-11",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Róbale una lógica a otro mundo",
+        question: "¿Qué podríamos robarle a un videojuego, deporte, ritual, fiesta, casino, escuela…?",
+        text: "Róbale una lógica a otro mundo: ¿Qué podríamos robarle a un videojuego, deporte, ritual, fiesta, casino, escuela…?",
+        tag: "Analogía"
+      },
+      {
+        id: "cortocircuito-12",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Invierte problema y solución",
+        question: "¿Qué pasaría si el problema se convirtiera en la solución?",
+        text: "Invierte problema y solución: ¿Qué pasaría si el problema se convirtiera en la solución?",
+        tag: "Reencuadre"
+      },
+      {
+        id: "cortocircuito-13",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Pon lo ignorado al centro",
+        question: "¿Qué cosa normalmente ignoramos de este problema? Pónganla al centro.",
+        text: "Pon lo ignorado al centro: ¿Qué cosa normalmente ignoramos de este problema? Pónganla al centro.",
+        tag: "Insight"
+      },
+      {
+        id: "cortocircuito-14",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Sería más increíble si…",
+        question: "Termina la frase y deja que otro continúe: “Sería más increíble si…”",
+        text: "Sería más increíble si…: Termina la frase y deja que otro continúe: “Sería más increíble si…”",
+        tag: "Co-creación"
+      },
+      {
+        id: "cortocircuito-15",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Cambia la emoción",
+        question: "¿Qué pasa si en vez de provocar la emoción esperada provocamos miedo, orgullo, curiosidad, nostalgia, alivio, deseo…?",
+        text: "Cambia la emoción: ¿Qué pasa si en vez de provocar la emoción esperada provocamos miedo, orgullo, curiosidad, nostalgia, alivio, deseo…?",
+        tag: "Cambio emocional"
+      },
+      {
+        id: "cortocircuito-16",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Cámbiale el objetivo",
+        question: "Olvida por un momento lo que el brief quiere conseguir. ¿Qué otra cosa interesante podríamos lograr?",
+        text: "Cámbiale el objetivo: Olvida por un momento lo que el brief quiere conseguir. ¿Qué otra cosa interesante podríamos lograr?",
+        tag: "Cambio de objetivo"
+      },
+      {
+        id: "cortocircuito-17",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Busca al tercero",
+        question: "Tenemos A → B. ¿Qué elemento inesperado podríamos meter en medio para cambiar la relación?",
+        text: "Busca al tercero: Tenemos A → B. ¿Qué elemento inesperado podríamos meter en medio para cambiar la relación?",
+        tag: "Elemento inesperado"
+      },
+      {
+        id: "cortocircuito-18",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Rompe la reacción esperada",
+        question: "¿Qué pasaría si nadie hiciera lo que esperamos que haga?",
+        text: "Rompe la reacción esperada: ¿Qué pasaría si nadie hiciera lo que esperamos que haga?",
+        tag: "Ruptura de expectativas"
+      },
+      {
+        id: "cortocircuito-19",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Cambia el verbo",
+        question: "Si estamos intentando mostrar, ¿qué pasa si tenemos que esconder, perseguir, intercambiar, destruir, regalar, coleccionar o transformar?",
+        text: "Cambia el verbo: Si estamos intentando mostrar, ¿qué pasa si tenemos que esconder, perseguir, intercambiar, destruir, regalar, coleccionar o transformar?",
+        tag: "Cambio de acción"
+      },
+      {
+        id: "cortocircuito-20",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Llévalo a otro mundo",
+        question: "¿Cómo funcionaría esta idea en una cárcel, colegio, estadio, aeropuerto, fiesta, hospital…?",
+        text: "Llévalo a otro mundo: ¿Cómo funcionaría esta idea en una cárcel, colegio, estadio, aeropuerto, fiesta, hospital…?",
+        tag: "Cambio de contexto"
+      },
+      {
+        id: "cortocircuito-21",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Cuestiona lo obvio",
+        question: "¿Qué estamos dando por obvio? Elijan una cosa. Ahora supongan que es falsa.",
+        text: "Cuestiona lo obvio: ¿Qué estamos dando por obvio? Elijan una cosa. Ahora supongan que es falsa.",
+        tag: "Cuestionamiento"
+      },
+      {
+        id: "cortocircuito-22",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: "Haz chocar extremos",
+        question: "¿Cómo sería si fuera lujoso y barato, privado y público, enorme y diminuto, serio y ridículo al mismo tiempo?",
+        text: "Haz chocar extremos: ¿Cómo sería si fuera lujoso y barato, privado y público, enorme y diminuto, serio y ridículo al mismo tiempo?",
+        tag: "Contraste de extremos"
+      },
+      {
+        id: "cortocircuito-23",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: null,
+        question: "¿Qué pasa si haces exactamente lo contrario de lo que hace toda la categoría?",
+        text: "¿Qué pasa si haces exactamente lo contrario de lo que hace toda la categoría?",
+        tag: "Ruptura de categoría"
+      },
+      {
+        id: "cortocircuito-24",
+        deck: "El Cortocircuito",
+        deckId: "cortocircuito",
+        title: null,
+        question: "Busca el elemento más aburrido del producto. ¿Cómo podría convertirse en protagonista?",
+        text: "Busca el elemento más aburrido del producto. ¿Cómo podría convertirse en protagonista?",
+        tag: "Revalorización del producto"
+      }
     ]
   },
 
@@ -44,26 +236,186 @@ const DECKS = {
       "Úsalo cuando ya tengas un concepto, mensaje o insight, pero no sepas cómo convertirlo en una campaña interesante. Sus cartas te empujan a pensar en acciones, experiencias, espacios, objetos, sentidos e interacciones reales.",
     useWhen: "Necesitas transformar un concepto en algo que la gente pueda vivir, tocar, hacer o experimentar.",
     cards: [
-      "Actúa físicamente la situación con tu equipo antes de escribir el guion.",
-      "¿Cómo se experimenta esta idea si el usuario no puede usar los ojos?",
-      "Diseña una interacción donde el consumidor tenga que tocar o modificar algo en la calle.",
-      "¿En qué lugar real tendría más sentido que ocurriera esta idea?",
-      "Si no pudieras usar una pantalla, ¿cómo funcionaría la campaña?",
-      "¿Qué tendría que hacer físicamente una persona para activar la idea?",
-      "¿Cómo cambiaría la experiencia si ocurriera únicamente de noche?",
-      "Convierte el eslogan en una acción que alguien pueda realizar.",
-      "¿Qué objeto cotidiano podría convertirse en medio publicitario?",
-      "Haz que el entorno responda físicamente al comportamiento de una persona. ¿Cómo?",
-      "¿Cómo podría sentirse esta idea usando únicamente sonido?",
-      "¿Qué pasaría si la campaña solo existiera durante 30 segundos?",
-      "Lleva la idea al lugar exacto donde ocurre el problema que intenta resolver. ¿Qué ves?",
-      "¿Cómo podría una persona modificar físicamente la publicidad y dejar su huella en ella?",
-      "Si tuvieras que demostrar el beneficio sin decir una sola palabra, ¿qué harías?",
-      "¿Cómo convertirías el producto en parte de un juego?",
-      "Diseña una acción que necesite dos desconocidos colaborando para funcionar.",
-      "¿Qué podría oler, tocar, escuchar o mover el consumidor?",
-      "Piensa en el recorrido cotidiano del público. ¿En qué momento podrías interrumpirlo de forma útil?",
-      "Si tu concepto tuviera que convertirse mañana en una instalación física de 2×2 metros, ¿qué construirías?"
+      {
+        id: "tierra-1",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "Actúa físicamente la situación con tu equipo antes de escribir el guion.",
+        text: "Actúa físicamente la situación con tu equipo antes de escribir el guion.",
+        tag: "Prototipado físico"
+      },
+      {
+        id: "tierra-2",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "¿Cómo se experimenta esta idea si el usuario no puede usar los ojos?",
+        text: "¿Cómo se experimenta esta idea si el usuario no puede usar los ojos?",
+        tag: "Experiencia sensorial"
+      },
+      {
+        id: "tierra-3",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "Diseña una interacción donde el consumidor tenga que tocar o modificar algo en la calle.",
+        text: "Diseña una interacción donde el consumidor tenga que tocar o modificar algo en la calle.",
+        tag: "Interacción física"
+      },
+      {
+        id: "tierra-4",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "¿En qué lugar real tendría más sentido que ocurriera esta idea?",
+        text: "¿En qué lugar real tendría más sentido que ocurriera esta idea?",
+        tag: "Contexto y ubicación"
+      },
+      {
+        id: "tierra-5",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "Si no pudieras usar una pantalla, ¿cómo funcionaría la campaña?",
+        text: "Si no pudieras usar una pantalla, ¿cómo funcionaría la campaña?",
+        tag: "Medios alternativos"
+      },
+      {
+        id: "tierra-6",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "¿Qué tendría que hacer físicamente una persona para activar la idea?",
+        text: "¿Qué tendría que hacer físicamente una persona para activar la idea?",
+        tag: "Activación"
+      },
+      {
+        id: "tierra-7",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "¿Cómo cambiaría la experiencia si ocurriera únicamente de noche?",
+        text: "¿Cómo cambiaría la experiencia si ocurriera únicamente de noche?",
+        tag: "Temporalidad"
+      },
+      {
+        id: "tierra-8",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "Convierte el eslogan en una acción que alguien pueda realizar.",
+        text: "Convierte el eslogan en una acción que alguien pueda realizar.",
+        tag: "Eslogan accionable"
+      },
+      {
+        id: "tierra-9",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "¿Qué objeto cotidiano podría convertirse en medio publicitario?",
+        text: "¿Qué objeto cotidiano podría convertirse en medio publicitario?",
+        tag: "Medio no convencional"
+      },
+      {
+        id: "tierra-10",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "Haz que el entorno responda físicamente al comportamiento de una persona. ¿Cómo?",
+        text: "Haz que el entorno responda físicamente al comportamiento de una persona. ¿Cómo?",
+        tag: "Entorno interactivo"
+      },
+      {
+        id: "tierra-11",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "¿Cómo podría sentirse esta idea usando únicamente sonido?",
+        text: "¿Cómo podría sentirse esta idea usando únicamente sonido?",
+        tag: "Diseño sonoro"
+      },
+      {
+        id: "tierra-12",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "¿Qué pasaría si la campaña solo existiera durante 30 segundos?",
+        text: "¿Qué pasaría si la campaña solo existiera durante 30 segundos?",
+        tag: "Restricción temporal"
+      },
+      {
+        id: "tierra-13",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "Lleva la idea al lugar exacto donde ocurre el problema que intenta resolver. ¿Qué ves?",
+        text: "Lleva la idea al lugar exacto donde ocurre el problema que intenta resolver. ¿Qué ves?",
+        tag: "Contextualización"
+      },
+      {
+        id: "tierra-14",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "¿Cómo podría una persona modificar físicamente la publicidad y dejar su huella en ella?",
+        text: "¿Cómo podría una persona modificar físicamente la publicidad y dejar su huella en ella?",
+        tag: "Participación del público"
+      },
+      {
+        id: "tierra-15",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "Si tuvieras que demostrar el beneficio sin decir una sola palabra, ¿qué harías?",
+        text: "Si tuvieras que demostrar el beneficio sin decir una sola palabra, ¿qué harías?",
+        tag: "Demostración del beneficio"
+      },
+      {
+        id: "tierra-16",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "¿Cómo convertirías el producto en parte de un juego?",
+        text: "¿Cómo convertirías el producto en parte de un juego?",
+        tag: "Gamificación"
+      },
+      {
+        id: "tierra-17",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "Diseña una acción que necesite dos desconocidos colaborando para funcionar.",
+        text: "Diseña una acción que necesite dos desconocidos colaborando para funcionar.",
+        tag: "Colaboración"
+      },
+      {
+        id: "tierra-18",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "¿Qué podría oler, tocar, escuchar o mover el consumidor?",
+        text: "¿Qué podría oler, tocar, escuchar o mover el consumidor?",
+        tag: "Interacción multisensorial"
+      },
+      {
+        id: "tierra-19",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "Piensa en el recorrido cotidiano del público. ¿En qué momento podrías interrumpirlo de forma útil?",
+        text: "Piensa en el recorrido cotidiano del público. ¿En qué momento podrías interrumpirlo de forma útil?",
+        tag: "Intervención cotidiana"
+      },
+      {
+        id: "tierra-20",
+        deck: "Bájalo a la Tierra",
+        deckId: "tierra",
+        title: null,
+        question: "Si tu concepto tuviera que convertirse mañana en una instalación física de 2×2 metros, ¿qué construirías?",
+        text: "Si tu concepto tuviera que convertirse mañana en una instalación física de 2×2 metros, ¿qué construirías?",
+        tag: "Instalación física"
+      }
     ]
   },
 
@@ -76,26 +428,186 @@ const DECKS = {
       "Úsalo cuando estés pensando demasiado en lo que aprobará el cliente, el director creativo o el resto del equipo. Sus cartas te invitan a exagerar, sabotear y crear deliberadamente malas ideas para apagar el crítico interno y descubrir posibilidades que normalmente censurarías.",
     useWhen: "Necesitas perder el miedo a equivocarte y liberar ideas más arriesgadas.",
     cards: [
-      "Escribe una idea que haga que despidan a toda la agencia inmediatamente.",
-      "Diseña una campaña donde el protagonista odie abiertamente tu producto.",
-      "Hazlo ridículamente lento, aburrido o molesto de ver.",
-      "¿Cuál sería la peor campaña posible para este brief? Descríbela.",
-      "Crea una idea que tu director creativo rechazaría en menos de cinco segundos.",
-      "¿Cómo lograrías que absolutamente nadie quisiera comprar el producto?",
-      "Exagera el problema del consumidor hasta niveles completamente ridículos.",
-      "Diseña una campaña deliberadamente vergonzosa. Ahora encuentra una cosa rescatable de ella.",
-      "Haz que el producto sea el villano de la historia.",
-      "¿Qué idea harías si supieras que jamás llegará a presentarse al cliente?",
-      "Piensa en algo que una marca “nunca haría”. Ahora imagina que lo hace.",
-      "Crea una idea que rompa una regla no escrita de la categoría.",
-      "Haz la campaña innecesariamente enorme para comunicar algo diminuto.",
-      "Ahora haz exactamente lo contrario: una acción diminuta para comunicar algo enorme.",
-      "Convierte el mayor cliché de la categoría en una parodia exagerada.",
-      "¿Qué ocurriría si el anuncio admitiera abiertamente que es publicidad?",
-      "Crea una idea cuyo objetivo sea incomodar durante cinco segundos al público.",
-      "Diseña algo que parezca un error antes de que el consumidor entienda la idea.",
-      "¿Cuál sería una solución tan absurda al problema que te daría vergüenza decirla en voz alta? Dila igual.",
-      "Toma tu peor idea. ¿Qué pequeño elemento de ella podría convertirse en una idea realmente buena?"
+      {
+        id: "bomba-1",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Escribe una idea que haga que despidan a toda la agencia inmediatamente.",
+        text: "Escribe una idea que haga que despidan a toda la agencia inmediatamente.",
+        tag: "Provocación extrema"
+      },
+      {
+        id: "bomba-2",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Diseña una campaña donde el protagonista odie abiertamente tu producto.",
+        text: "Diseña una campaña donde el protagonista odie abiertamente tu producto.",
+        tag: "Antipublicidad"
+      },
+      {
+        id: "bomba-3",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Hazlo ridículamente lento, aburrido o molesto de ver.",
+        text: "Hazlo ridículamente lento, aburrido o molesto de ver.",
+        tag: "Antiatracción"
+      },
+      {
+        id: "bomba-4",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "¿Cuál sería la peor campaña posible para este brief? Descríbela.",
+        text: "¿Cuál sería la peor campaña posible para este brief? Descríbela.",
+        tag: "Peor escenario"
+      },
+      {
+        id: "bomba-5",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Crea una idea que tu director creativo rechazaría en menos de cinco segundos.",
+        text: "Crea una idea que tu director creativo rechazaría en menos de cinco segundos.",
+        tag: "Ruptura de aprobación"
+      },
+      {
+        id: "bomba-6",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "¿Cómo lograrías que absolutamente nadie quisiera comprar el producto?",
+        text: "¿Cómo lograrías que absolutamente nadie quisiera comprar el producto?",
+        tag: "Antiobjetivo"
+      },
+      {
+        id: "bomba-7",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Exagera el problema del consumidor hasta niveles completamente ridículos.",
+        text: "Exagera el problema del consumidor hasta niveles completamente ridículos.",
+        tag: "Exageración"
+      },
+      {
+        id: "bomba-8",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Diseña una campaña deliberadamente vergonzosa. Ahora encuentra una cosa rescatable de ella.",
+        text: "Diseña una campaña deliberadamente vergonzosa. Ahora encuentra una cosa rescatable de ella.",
+        tag: "Vergüenza creativa"
+      },
+      {
+        id: "bomba-9",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Haz que el producto sea el villano de la historia.",
+        text: "Haz que el producto sea el villano de la historia.",
+        tag: "Inversión de roles"
+      },
+      {
+        id: "bomba-10",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "¿Qué idea harías si supieras que jamás llegará a presentarse al cliente?",
+        text: "¿Qué idea harías si supieras que jamás llegará a presentarse al cliente?",
+        tag: "Libertad creativa"
+      },
+      {
+        id: "bomba-11",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Piensa en algo que una marca “nunca haría”. Ahora imagina que lo hace.",
+        text: "Piensa en algo que una marca “nunca haría”. Ahora imagina que lo hace.",
+        tag: "Transgresión"
+      },
+      {
+        id: "bomba-12",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Crea una idea que rompa una regla no escrita de la categoría.",
+        text: "Crea una idea que rompa una regla no escrita de la categoría.",
+        tag: "Ruptura de convenciones"
+      },
+      {
+        id: "bomba-13",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Haz la campaña innecesariamente enorme para comunicar algo diminuto.",
+        text: "Haz la campaña innecesariamente enorme para comunicar algo diminuto.",
+        tag: "Desproporción"
+      },
+      {
+        id: "bomba-14",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Ahora haz exactamente lo contrario: una acción diminuta para comunicar algo enorme.",
+        text: "Ahora haz exactamente lo contrario: una acción diminuta para comunicar algo enorme.",
+        tag: "Minimalismo extremo"
+      },
+      {
+        id: "bomba-15",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Convierte el mayor cliché de la categoría en una parodia exagerada.",
+        text: "Convierte el mayor cliché de la categoría en una parodia exagerada.",
+        tag: "Parodia"
+      },
+      {
+        id: "bomba-16",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "¿Qué ocurriría si el anuncio admitiera abiertamente que es publicidad?",
+        text: "¿Qué ocurriría si el anuncio admitiera abiertamente que es publicidad?",
+        tag: "Autorreferencia"
+      },
+      {
+        id: "bomba-17",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Crea una idea cuyo objetivo sea incomodar durante cinco segundos al público.",
+        text: "Crea una idea cuyo objetivo sea incomodar durante cinco segundos al público.",
+        tag: "Incomodidad"
+      },
+      {
+        id: "bomba-18",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Diseña algo que parezca un error antes de que el consumidor entienda la idea.",
+        text: "Diseña algo que parezca un error antes de que el consumidor entienda la idea.",
+        tag: "Engaño perceptivo"
+      },
+      {
+        id: "bomba-19",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "¿Cuál sería una solución tan absurda al problema que te daría vergüenza decirla en voz alta? Dila igual.",
+        text: "¿Cuál sería una solución tan absurda al problema que te daría vergüenza decirla en voz alta? Dila igual.",
+        tag: "Idea prohibida"
+      },
+      {
+        id: "bomba-20",
+        deck: "La Bomba",
+        deckId: "bomba",
+        title: null,
+        question: "Toma tu peor idea. ¿Qué pequeño elemento de ella podría convertirse en una idea realmente buena?",
+        text: "Toma tu peor idea. ¿Qué pequeño elemento de ella podría convertirse en una idea realmente buena?",
+        tag: "Rescate de ideas"
+      }
     ]
   }
 };
@@ -395,9 +907,13 @@ function renderDeck() {
   }
 
   const cardIndex = progress.order[progress.position];
-  const cardText = deck.cards[cardIndex];
+  const card = deck.cards[cardIndex];
   const viewedNumber = progress.position + 1;
   const percentage = Math.round((viewedNumber / total) * 100);
+
+  const cardTitle = typeof card === "object" ? card.title : null;
+  const cardTag = typeof card === "object" ? card.tag : "";
+  const cardQuestion = typeof card === "object" ? (card.question || card.text) : card;
 
   renderShell(`
     <section class="deck-screen">
@@ -414,13 +930,17 @@ function renderDeck() {
         <div class="fake-card one ${deck.color}" aria-hidden="true"></div>
         <div class="fake-card two ${deck.color}" aria-hidden="true"></div>
 
-        <article class="prompt-card ${deck.color}" id="active-card" key="${deckId}-${progress.position}" tabindex="0" role="region" aria-label="Carta ${viewedNumber} de ${total}">
+        <article class="prompt-card ${deck.color}${cardTitle ? " has-title" : ""}" id="active-card" key="${deckId}-${progress.position}" tabindex="0" role="region" aria-label="Carta ${viewedNumber} de ${total}">
           <div class="card-topline">
             <span>${deck.emoji} ${deck.name}</span>
             <span class="card-number">${viewedNumber}/${total}</span>
           </div>
 
-          <div class="prompt-text">${cardText}</div>
+          <div class="card-body">
+            ${cardTitle ? `<h2 class="card-title">${cardTitle}</h2>` : ""}
+            ${cardTag ? `<div class="card-tag-wrap"><span class="card-tag">${cardTag}</span></div>` : ""}
+            <div class="prompt-text">${cardQuestion}</div>
+          </div>
 
           <div class="card-note">
             No intentes resolverla de inmediato. Dale una vuelta, llévala al brief y observa qué asociaciones nuevas aparecen.
